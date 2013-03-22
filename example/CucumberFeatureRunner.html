@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cucumber Feature Runner</title>
+    <meta charset="utf-8">
+
+    <!--cucumber-js runner, html reporter, and required libs-->
+    <link rel="stylesheet" href="../src/lib/cucumber-html.css">
+    <script src="../src/lib/jquery-1.9.1.js"></script>
+    <script src="../src/lib/async.js"></script>
+    <script src="../src/lib/cucumber.js"></script>
+    <script src="../src/cucumber-js-runner.js"></script>
+    <script src="../src/cucumber-js-html-reporter.js"></script>
+
+    <!--step definitions-->
+    <script src="features/step_definitions/myStepDefinitions.js"></script>
+
+    <script>
+        addFeatures(["features/developer_does_math.feature"]);
+
+        Cucumber.attachReporter(new Cucumber.HtmlReporter());
+        Cucumber.run();
+    </script>
+</head>

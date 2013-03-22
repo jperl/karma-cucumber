@@ -1,0 +1,38 @@
+{
+    "name": "cucumber-js-runner",
+    "description": " Wrapper around cucumber-js to create a standard runner & reporter for client side testing of multiple features / step definitions",
+    "keywords": [
+        "cucumber-js",
+        "testing",
+        "bdd",
+        "cucumber",
+        "gherkin",
+        "tests",
+        "karma"
+    ],
+    "version": "0.1.0",
+    "homepage": "http://github.com/jperl/cucumber-runner",
+    "author": "Jonathan Perl <perl.jonathan@gmail.com>",
+    "contributors": [
+        "Jonathan Perl <perl.jonathan@gmail.com>",
+        "Julien Biezemans <jb@jbpros.com> (http://jbpros.net)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jperl/cucumber-runner.git"
+    },
+    "bugs": {
+        "url": "http://github.com/jperl/cucumber-runner/issues"
+    },
+    "dependencies": {
+    },
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ],
+    "devDependencies": {
+        "connect": "latest"
+    },
+    "optionalDependencies": {}
+}
