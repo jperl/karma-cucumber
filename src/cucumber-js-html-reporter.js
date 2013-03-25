@@ -76,15 +76,27 @@
         return self;
     };
 
-    var output = $("<div id='output' class='cucumber-report'></div>"),
+    var report = $("<div id='CucumberJsHtmlReport'></div>"),
+        output = $("<div id='output' class='cucumber-report'></div>"),
         runButton = $("<button id='run'>Run</button>");
 
-    //setup the run button and add the output div
+    //setup the run button and add the report and output div
     var initialize = function () {
         $(document).ready(function () {
             var body = $("body");
-            runButton.appendTo(body);
-            output.appendTo(body);
+
+            $("html").add(body).add(report).each(function () {
+                $(this).css({
+                    height: "100%",
+                    width: "100%",
+                    margin: "0"
+                });
+            });
+
+            report.css("background", "white");
+            report.appendTo(body);
+            runButton.appendTo(report);
+            output.appendTo(report);
         });
 
         runButton.click(function () {
