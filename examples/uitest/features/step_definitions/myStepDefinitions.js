@@ -5,7 +5,7 @@ addStepDefinitions(function (step) {
 
     step.Given("developer opens the page", function (callback) {
         //relative to uitest
-        uit.url("../index.html");
+        uit.url("../app.html");
 
         uit.ready(function () {
             callback();
@@ -13,12 +13,20 @@ addStepDefinitions(function (step) {
     });
 
     step.When("developer chooses learn more", function (callback) {
-        callback();
+        uit.ready(function (document) {
+            $(document).find("#learnMore").click();
+            callback();
+        });
     });
 
-    step.Then("the alert should say $alertText", function (alertText, callback) {
-        console.log(alertText);
+    step.Then("the application should say $message", function (message, callback) {
+        uit.ready(function (document) {
+            var messageText = $(document).find("#message").text()
 
-        callback();
+            if (message === messageText)
+                callback();
+            else
+                callback.fail();
+        });
     });
 });

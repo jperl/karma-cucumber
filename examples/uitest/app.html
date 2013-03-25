@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Needed for uitest-->
+    <script type="text/javascript">parent.uitest && parent.uitest.instrument(window);</script>
+
+    <title>Simple site</title>
+
+    <script type="text/javascript">
+        window.updateMessage = function () {
+            var message = document.getElementById("message");
+            message.innerHTML = "This is a simple site, but uitest can load complex ones too! Checkout https://github.com/jperl/angular-jquery-mobile";
+        };
+    </script>
+</head>
+<body>
+
+<div id="message"></div>
+
+<button id="learnMore" onclick="updateMessage()">Learn More</button>
+
+</body>
+</html>
