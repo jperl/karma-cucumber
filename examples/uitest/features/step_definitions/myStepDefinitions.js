@@ -1,9 +1,12 @@
 "use strict";
 
 addStepDefinitions(function (step) {
-    var uit = uitest.current;
+    var uit;
 
     step.Given("developer opens the page", function (callback) {
+        //create a new test every time
+        uit = uitest.create();
+
         //relative to uitest
         uit.url("../app.html");
 
