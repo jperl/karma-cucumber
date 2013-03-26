@@ -13,7 +13,7 @@ Coming Soon: Run your tests with [Karma](http://karma-runner.github.com/) and ev
 
 Checkout the [examples folder](https://github.com/jperl/cucumber-js-runner/tree/master/examples).
 
-Run the [simple example](http://jperl.github.com/cucumber-js-runner/examples/simple/CucumberFeatureRunner.html) or [uitest.js example](http://jperl.github.com/cucumber-js-runner/examples/uitest/CucumberFeatureRunner.html).
+Run the [simple example](http://jperl.github.com/cucumber-js-runner/examples/simple/CucumberFeatureRunner.html) or [uitest.js example](http://jperl.github.com/cucumber-js-runner/examples/uitest/CucumberFeatureRunner.html). Heres an [example](https://github.com/jperl/angular-jquery-mobile/tree/master/test/features) in a larger application.
 
 You can run these locally as well. Serve them with `node examples/server.js`
 

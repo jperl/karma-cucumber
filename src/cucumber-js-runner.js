@@ -98,8 +98,9 @@
             });
         };
 
+
         //run cucumber-js for each feature
-        $.each(features, function (index, feature) {
+        async.eachSeries(features, function (feature, callback) {
             var cucumber = Cucumber(feature.text, stepDefinitionsSource);
 
             $.each(reporters, function (index, reporter) {
@@ -109,7 +110,8 @@
             });
 
             cucumber.start(function () {
-                //after the test is complete
+                //after the test is complete move on
+                callback();
             });
         });
 

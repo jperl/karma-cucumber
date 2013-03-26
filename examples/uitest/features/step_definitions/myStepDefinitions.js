@@ -3,7 +3,7 @@
 addStepDefinitions(function (step) {
     var uit;
 
-    step.Given("developer opens the page", function (callback) {
+    step.defineStep("developer opens the page", function (callback) {
         //create a new test every time
         uit = uitest.create();
 
@@ -15,14 +15,14 @@ addStepDefinitions(function (step) {
         });
     });
 
-    step.When("developer chooses learn more", function (callback) {
+    step.defineStep("developer chooses learn more", function (callback) {
         uit.ready(function (document) {
             $(document).find("#learnMore").click();
             callback();
         });
     });
 
-    step.Then("the application should say $message", function (message, callback) {
+    step.defineStep("the application should say $message", function (message, callback) {
         uit.ready(function (document) {
             var messageText = $(document).find("#message").text()
 
