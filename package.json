@@ -1,6 +1,6 @@
 {
-    "name": "cucumber-js-runner",
-    "description": " Wrapper around cucumber-js to create a standard runner & reporter for client side testing of multiple features / step definitions",
+    "name": "karma-cucumber",
+    "description": "Wrapper around cucumber-js to create a standard runner & reporter for client side testing of multiple features / step definitions",
     "keywords": [
         "cucumber-js",
         "testing",
@@ -11,7 +11,7 @@
         "karma"
     ],
     "version": "0.1.0",
-    "homepage": "http://github.com/jperl/cucumber-runner",
+    "homepage": "http://github.com/jperl/karma-cucumber",
     "author": "Jonathan Perl <perl.jonathan@gmail.com>",
     "contributors": [
         "Jonathan Perl <perl.jonathan@gmail.com>",
@@ -19,10 +19,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git://github.com/jperl/cucumber-runner.git"
+        "url": "git://github.com/jperl/karma-cucumber.git"
     },
     "bugs": {
-        "url": "http://github.com/jperl/cucumber-runner/issues"
+        "url": "http://github.com/jperl/karma-cucumber/issues"
     },
     "dependencies": {
     },
