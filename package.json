@@ -24,14 +24,13 @@
     "bugs": {
         "url": "http://github.com/jperl/karma-cucumber/issues"
     },
-    "licenses": [
-        {
-            "type": "MIT"
-        }
-    ],
     "dependencies": {
     },
     "devDependencies": {
         "connect": "latest"
-    }
+    },
+    "peerDependencies": {
+        "karma": "~0.9"
+    },
+    "license": "MIT"
 }

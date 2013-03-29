@@ -17,14 +17,18 @@ Coming soon
 
 > Run the cucumber tests in the browser manually
 
-Checkout the [examples folder](https://github.com/jperl/karma-cucumber/tree/master/examples).
+- Install the bower package `bower install karma-cucumber`
+- Add your feature files, step definitions, and a runner.html
+- Open the runner in the browser
 
-Run the [simple example](http://jperl.github.com/karma-cucumber/examples/simple/CucumberFeatureRunner.html) or [uitest.js example](http://jperl.github.com/karma-cucumber/examples/uitest/CucumberFeatureRunner.html). Here is an [example](https://github.com/jperl/angular-jquery-mobile/tree/master/test/features) in a larger application.
+Checkout [this folder of examples](https://github.com/jperl/karma-cucumber/tree/master/examples) which contains a [simple example](http://jperl.github.com/karma-cucumber/examples/simple/CucumberFeatureRunner.html) and a [uitest.js example](http://jperl.github.com/karma-cucumber/examples/uitest/CucumberFeatureRunner.html). 
 
 You can run these locally as well:
 
-- Install the bower packages `bower install`
-- Make sure you have connect server `npm install` then run it `node examples/server.js`
+- Make sure you have connect server `npm install`
+- Then run it `node examples/server.js`
+
+Here is an [example](https://github.com/jperl/angular-jquery-mobile/tree/master/test/features) in a larger application.
 
 # Credits
 

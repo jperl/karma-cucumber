@@ -1,38 +1,15 @@
 {
     "name": "karma-cucumber",
     "version": "0.0.1",
-    "description": "Wrapper around cucumber-js to create a standard runner & reporter for client side testing of multiple features / step definitions",
-    "keywords": [
-        "cucumber-js",
-        "testing",
-        "bdd",
-        "cucumber",
-        "gherkin",
-        "tests",
-        "karma"
-    ],
-    "homepage": "http://github.com/jperl/karma-cucumber",
-    "author": "Jonathan Perl <perl.jonathan@gmail.com>",
-    "contributors": [
-        "Jonathan Perl <perl.jonathan@gmail.com>",
-        "Julien Biezemans <jb@jbpros.com> (http://jbpros.net)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/jperl/karma-cucumber.git"
-    },
-    "bugs": {
-        "url": "http://github.com/jperl/karma-cucumber/issues"
-    },
-    "licenses": [
-        {
-            "type": "MIT"
-        }
-    ],
+    "main": ["./vendor/cucumber.js", "./lib/cucumber-js-runner.js", "./vendor/cucumber-html.css", "./lib/cucumber-html-reporter.js"],
     "dependencies": {
         "async": "0.2.x",
         "jquery": "1.9.x"
     },
-    "devDependencies": {
-    }
+    "ignore": [
+        "examples/",
+        "src/",
+        "index.html",
+        "package.json"
+    ]
 }
