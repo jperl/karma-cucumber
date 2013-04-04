@@ -1,14 +1,16 @@
 "use strict";
 
 addStepDefinitions(function (step) {
-    var uit;
+    var uit,
+    //relative to uitest.js
+        baseUrl = "../../../";
 
     step.defineStep("developer opens the page", function (callback) {
         //create a new test every time
         uit = uitest.create();
 
         //relative to uitest
-        uit.url("../app.html");
+        uit.url(baseUrl + "examples/uitest/app.html");
 
         uit.ready(function () {
             callback();

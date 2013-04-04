@@ -1,0 +1,1 @@
+addFeatures(["base/examples/uitest/features/developer_learns_more.feature"]);

@@ -4,7 +4,8 @@
     "main": ["./vendor/cucumber.js", "./lib/cucumber-js-runner.js", "./vendor/cucumber-html.css", "./lib/cucumber-html-reporter.js"],
     "dependencies": {
         "async": "0.2.x",
-        "jquery": "1.9.x"
+        "jquery": "1.9.x",
+        "uitest.js": "0.9.x"
     },
     "ignore": [
         "examples/",
